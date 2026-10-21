@@ -14,7 +14,7 @@ const I18n = {
             step1: "Open any <strong>Scribd</strong> document you want to save.",
             step2: "A <strong>floating panel</strong> will appear on the screen. Reload if it doesn't.",
             step3: "Click <strong>'Server Extraction'</strong> as the main method, or <strong>'External Download'</strong> for an alternative.",
-            footer: "v2.9.0 — Open Source"
+            footer: "v2.9.0 — steVeR Edition"
         },
         overlay: {
             title: "⚡ Scribd Premium",

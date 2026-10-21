@@ -20,7 +20,46 @@ Extension Chrome (Manifest V3) pour télécharger des documents **Scribd** en **
 
 ---
 
-## 🧪 Installation dans Chrome (mode développeur / Developer Mode)
+## 🖼️ Aperçu (capture d'écran)
+
+### 1. Bouton « ⬇ Download PDF » dans l'en-tête de Scribd
+![Bouton steVeR dans la barre Scribd](assets/screenshot-header.png)
+
+### 2. Popup de l'extension
+![Popup steVeR Edition](assets/screenshot-popup.png)
+
+### 3. Panneau flottant — le téléchargement externe (bouton unique)
+![Panneau flottant steVeR](assets/screenshot-panel.png)
+
+---
+
+## 📦 Installation
+
+**Ne vous inquiétez pas — c'est plus simple qu'il n'y paraît ! Suivez simplement ces trois étapes.**
+
+### Étape 1 — Télécharger l'extension
+
+Cliquez sur le bouton ci-dessous pour télécharger la dernière version au format ZIP :
+
+[![Télécharger ZIP v2.9.0](https://img.shields.io/badge/T%C3%A9l%C3%A9charger%20la%20version%20ZIP--v2.9.0-ec4899)](https://github.com/STEVERLAABS/Scribd-Downloader-steVeR/releases/latest)
+
+*(ou via le bouton vert **Code** → **Download ZIP**)*
+
+### Étape 2 — Activer le mode développeur et charger l'extension
+
+1. Décompressez le ZIP dans un dossier de votre PC.
+2. Ouvrez `chrome://extensions` dans Chrome.
+3. Activez **Developer mode** (mode développeur) en haut à droite.
+4. Cliquez **Load unpacked** et sélectionnez le dossier décompressé (celui qui contient `manifest.json`).
+5. Vérifiez que l'extension est activée (interrupteur bleu).
+
+### Étape 3 — Utiliser sur Scribd
+
+Ouvrez un document Scribd (appuyez `F5` si la page était déjà ouverte) → le bouton **⬇ Download PDF** apparaît dans l'en-tête + le panneau flottant → **un clic suffit : la page bascule et le téléchargement du PDF démarre automatiquement.**
+
+---
+
+## 🧪 Installation détaillée (mode développeur)
 
 ### Étape par étape
 
