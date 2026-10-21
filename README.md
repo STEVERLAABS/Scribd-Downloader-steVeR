@@ -1,99 +1,90 @@
 # Scribd Premium Downloader — steVeR Edition 🟣
 
-> © **ing steVeR** — نشتق من المشروع المفتوح المصدر الأصلي [Scribd-Downloader-Premium](https://github.com/HugoAleOlguin/Scribd-Downloader-Premium) باحتفاظ كامل بمنطقه، مع أسلوب وإضافات خاصة.
+> © **ing steVeR** — dérivé du projet open source original [Scribd-Downloader-Premium](https://github.com/HugoAleOlguin/Scribd-Downloader-Premium) en conservant intégralement sa logique, avec un habillage et des ajouts spécifiques.
 
-إضافة متصفح Chrome (Manifest V3) لتنزيل مستندات **Scribd** كملف **PDF** عن طريق خدمة تنزيل خارجية — بعمرة واحدة فقط.
+Extension Chrome (Manifest V3) pour télécharger des documents **Scribd** en **PDF** via un service de téléchargement externe — en un seul clic.
 
 ---
 
-## ✨ ما يميز هذه النسخة (steVeR Edition)
+## ✨ Ce qui distingue cette édition (steVeR Edition)
 
-| الميزة | التفاصيل |
+| Fonctionnalité | Détails |
 |---|---|
-| 🟣 **ثيم steVeR** | واجهة بنفسجية/فوشيا في البانل العائم والبوبب، مع حقوق `© ing steVeR` |
-| ⬇ **زر في شريط Scribd** | زر `⬇ Download PDF` يظهر داخل الترويسة العلوية (بجانب البحث) على صفحات المستندات |
-| 🖱️ **تنزيل بضغطة واحدة** | الضغط على الزر يؤدي إلى فتح وضع القراءة embed وبدء التحميل الخارجي تلقائيًا |
-| 🌐 **إنجليزية فقط** | أُزيلت اللغة الإسبانية؛ الواجهة كلها EN |
-| 📥 **طريقة واحدة** | خيار التحميل من الموقع الخارجي فقط (أُزيلت طرق التقاط الصور) |
+| 🟣 **Thème steVeR** | Interface violette/fuchsia dans le panneau flottant et le popup, avec les crédits `© ing steVeR` |
+| ⬇ **Bouton dans la barre Scribd** | Un bouton `⬇ Download PDF` apparaît dans l'en-tête (à côté de la recherche) sur les pages de documents |
+| 🖱️ **Téléchargement en un clic** | Le bouton ouvre le lecteur embed et lance automatiquement le téléchargement externe |
+| 🌐 **Anglais uniquement** | L'espagnol a été retiré ; toute l'interface est en anglais (EN) |
+| 📥 **Une seule méthode** | Uniquement le téléchargement via site externe (les méthodes par capture d'écran ont été retirées) |
 
-**الإصدار:** 2.9.0 — `version_name: steVeR Edition`
+**Version :** 2.9.0 — `version_name : steVeR Edition`
 
 ---
 
-## 🧪 التثبيت في Chrome (وضع المطوّر / Developer Mode)
+## 🧪 Installation dans Chrome (mode développeur / Developer Mode)
 
-### بالعربية
+### Étape par étape
 
-1. **حمّل المشروع:** اضغط زر **Code** الأخضر أعلى المستودع ← **Download ZIP** ← فك الضغط في مجلد على جهازك (مثلاً سطح المكتب). *(أو استخدام `git clone` إن كان لديك Git.)*
-2. **افتح صفحة الإضافات:** في Chrome اكتب في شريط العنوان:
+1. **Téléchargez le projet** : cliquez sur le bouton vert **Code** en haut du dépôt → **Download ZIP** → décompressez dans un dossier de votre PC (par exemple le Bureau). *(Ou utilisez `git clone` si Git est installé.)*
+2. **Ouvrez la page des extensions** : dans Chrome, tapez dans la barre d'adresse :
 
    ```
    chrome://extensions
    ```
 
-3. **فعّل وضع المطوّر:** مفتاح **Developer mode / وضع المطوّر** يوجد أعلى يمين الصفحة — أدره إلى **ON**. بدون هذه الخطوة لن يظهر زر التحميل اليدوي.
-4. **حمّل الإضافة:** انقر زر **Load unpacked / تحميل غير مضغوظ** (يظهر بعد تفعيل وضع المطوّر) ← اختر **مجلد الإضافة** — المجلد الذي يحتوي ملف `manifest.json`.
-5. **تأكد من التفعيل:** ستظهر بطاقة `Scribd Premium Downloader — steVeR Edition` في القائمة، وتأكد أن مفتاحها مفعّل (أزرق).
-6. **جرّب:** افتح أي مستند Scribd وحدّث الصفحة *(F5)* — سترى زر **⬇ Download PDF** في أعلى الصفحة + البانل العائم.
+3. **Activez le mode développeur** : l'interrupteur **Developer mode / Mode développeur** se trouve en haut à droite de la page — basculez-le sur **ON**. Sans cette étape, le bouton de chargement manuel n'apparaîtra pas.
+4. **Chargez l'extension** : cliquez sur **Load unpacked / Charger l'extension non empaquetée** (apparaît après avoir activé le mode développeur) → sélectionnez le **dossier de l'extension** — le dossier qui contient le fichier `manifest.json`.
+5. **Vérifiez l'activation** : la carte « Scribd Premium Downloader — steVeR Edition » apparaît dans la liste ; assurez-vous que son interrupteur est activé (bleu).
+6. **Essayez** : ouvrez n'importe quel document Scribd et actualisez la page *(F5)* — vous verrez le bouton **⬇ Download PDF** en haut de la page + le panneau flottant.
 
-### 🔄 عند أي تحديث للمشروع
+### 🔄 Après une mise à jour du projet
 
-حمّل النسخة الجديدة <- استبدل الملفات في نفس المجلد <- في `chrome://extensions` اضغط زر **التحديث ↻ (Reload)** على بطاقة الإضافة <- حدّث صفحة Scribd.
+Téléchargez la nouvelle version → remplacez les fichiers dans le même dossier → dans `chrome://extensions`, cliquez sur le bouton de **rechargement ↻ (Reload)** sur la carte de l'extension → actualisez la page Scribd.
 
-### فيديو الخطوات باختصار (نصي)
+### Résumé rapide
 
 ```
-chrome://extensions  →  Developer mode: ON  →  Load unpacked  →  اختر المجلد  →  F5 على Scribd
+chrome://extensions  →  Developer mode : ON  →  Load unpacked  →  choisir le dossier  →  F5 sur Scribd
 ```
-
-### English quick guide
-
-1. Download this repository (**Code → Download ZIP**) and unzip it.
-2. Open `chrome://extensions`.
-3. Turn **Developer mode** ON (top-right toggle).
-4. Click **Load unpacked** and select the extracted folder (the one containing `manifest.json`).
-5. Open any Scribd document page — use the header button **⬇ Download PDF** or the floating panel, then the download starts automatically.
 
 ---
 
-## 📖 طريقة الاستخدام
+## 📖 Utilisation
 
-1. افتح مستند Scribd ← سيظهر زر **⬇ Download PDF** في شريط Scribd العلوي + البانل العائم أسفل يمين الشاشة.
-2. اضغط **⬇ Download PDF** ← الصفحة تفتح وضع القراءة و**يبدأ التحميل من الموقع الخارجي تلقائيًا** بعد ثانية.
-3. أكمل الخطوات في التاب الجديد إن ظهرت (التحقق الآلي يعمل وحده) ← ينتهي بملف PDF يُلحظ في مجلد التنزيلات.
+1. Ouvrez un document Scribd → le bouton **⬇ Download PDF** apparaît dans la barre de Scribd + le panneau flottant en bas à droite de l'écran.
+2. Cliquez sur **⬇ Download PDF** → la page bascule en mode lecteur et le **téléchargement externe démarre automatiquement** après une seconde — sans clic supplémentaire.
+3. Suivez les étapes dans le nouvel onglet si elles apparaissent (la vérification automatique s'exécute seule) → le fichier PDF est enregistré dans votre dossier Téléchargements.
 
-> يمكنك أيضًا الضغط مباشرة على زر **Descargar PDF Original** داخل البانل العائم.
+> Vous pouvez aussi cliquer directement sur le bouton **Descargar PDF Original** dans le panneau flottant.
 
 ---
 
-## 🗂️ بنية المشروع
+## 🗂️ Structure du projet
 
 ```
 Scribd-Downloader-steVeR/
-├── manifest.json          # بيانات الإضافة (MV3) — steVeR Edition
-├── background.js          # Service Worker: التنزيل الخارجي + الأتمتة + الإشعارات
-├── content.js             # منطق الصفحة: البانل العائم + زر الترويسة + التدفق
-├── overlay.css            # ثيم steVeR (بنفسجي/فوشيا) للبانل العائم
-├── popup.html / popup.js  # نافذة البوبب (EN) + زر GitHub
+├── manifest.json          # Configuration de l'extension (MV3) — steVeR Edition
+├── background.js          # Service Worker : téléchargement externe + automatisation + notifications
+├── content.js             # Logique de la page : panneau flottant + bouton d'en-tête + flux complet
+├── overlay.css            # Thème steVeR (violet/fuchsia) du panneau flottant
+├── popup.html / popup.js  # Fenêtre popup (EN) + bouton GitHub
 ├── libs/
-│   ├── i18n.js            # الترجمات (EN فقط)
+│   ├── i18n.js            # Traductions (EN uniquement)
 │   ├── shim.js
 │   ├── html2canvas.min.js
 │   └── jspdf.umd.min.js
-└── icons/                 # أيقونات الإضافة
+└── icons/                 # Icônes de l'extension
 ```
 
 ---
 
-## ⚠️ ملاحظات
+## ⚠️ Notes
 
-- هذا المستودع **خاص (Private)** — زر GitHub داخل البوبب يوجّه إليه؛ غير المشارِك معك لن يرى محتواه.
-- المشروع يُستخدم للأغراض الشخصية (نسخ مستنداتك) — احترم حقوق الناشرين.
-- كل التحقق تم بنجاح: القوالب والأقواس متوازنة، وUTF-8 بدون BOM، و`manifest.json` سليم.
+- Utilisation à des fins personnelles (sauvegarde de vos documents) — respectez les droits d'auteur des éditeurs.
+- Tous les contrôles ont été validés : accolades/parenthèses équilibrées, UTF-8 sans BOM, `manifest.json` conforme.
 
 ---
 
-## 📜 الحقوق
+## 📜 Crédits
 
-- **التصميم والأسلوب والحقوق:** © ing steVeR
-- **المشروع الأصلي:** [HugoAleOlguin/Scribd-Downloader-Premium](https://github.com/HugoAleOlguin/Scribd-Downloader-Premium) — شكرًا للعمل المفتوح المصدر.
+- **Design, thème et droit** : © ing steVeR
+- **Projet original** : [HugoAleOlguin/Scribd-Downloader-Premium](https://github.com/HugoAleOlguin/Scribd-Downloader-Premium) — merci pour ce travail open source.
